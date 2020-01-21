@@ -30,8 +30,8 @@ Kernel configured for up to 4 processors.
 Processor type: x86_64h (Intel x86-64h Haswell)
 Processors active: 0 1 2 3
 Primary memory available: 8.00 gigabytes
-Default processor set: 415 tasks, 1764 threads, 4 processors
-Load average: 1.34, Mach factor: 2.84
+Default processor set: 412 tasks, 1778 threads, 4 processors
+Load average: 2.70, Mach factor: 1.37
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
@@ -66,7 +66,10 @@ configure:3008: result: /usr/bin/install -c
 configure:3019: checking whether build environment is sane
 configure:3074: result: yes
 configure:3130: checking for x86_64-apple-darwin-strip
-configure:3157: result: /Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-strip
+configure:3160: result: no
+configure:3170: checking for strip
+configure:3186: found /usr/bin/strip
+configure:3197: result: strip
 configure:3222: checking for a thread-safe mkdir -p
 configure:3261: result: /Users/jimmy/Workspace/jiwei.github.io/vendor/bundle/ruby/2.6.0/gems/ffi-1.12.1/ext/ffi_c/libffi/install-sh -c -d
 configure:3268: checking for gawk
@@ -106,122 +109,35 @@ clang: error: unknown argument '-qversion', did you mean '--version'?
 clang: error: no input files
 configure:3835: $? = 1
 configure:3855: checking whether the C compiler works
-configure:3877:  xcrun clang -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -arch x86_64 conftest.c  >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:3877:  xcrun clang -arch x86_64   -arch x86_64 conftest.c  >&5
 configure:3881: $? = 0
 configure:3929: result: yes
 configure:3932: checking for C compiler default output file name
 configure:3934: result: a.out
 configure:3940: checking for suffix of executables
-configure:3947:  xcrun clang -o conftest -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -arch x86_64 conftest.c  >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:3947:  xcrun clang -o conftest -arch x86_64   -arch x86_64 conftest.c  >&5
 configure:3951: $? = 0
 configure:3973: result: 
 configure:3995: checking whether we are cross compiling
-configure:4003:  xcrun clang -o conftest -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -arch x86_64 conftest.c  >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:4003:  xcrun clang -o conftest -arch x86_64   -arch x86_64 conftest.c  >&5
 configure:4007: $? = 0
 configure:4014: ./conftest
 configure:4018: $? = 0
 configure:4033: result: no
 configure:4038: checking for suffix of object files
-configure:4060:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:4060:  xcrun clang -c -arch x86_64   conftest.c >&5
 configure:4064: $? = 0
 configure:4085: result: o
 configure:4089: checking whether we are using the GNU C compiler
-configure:4108:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:4108:  xcrun clang -c -arch x86_64   conftest.c >&5
 configure:4108: $? = 0
 configure:4117: result: yes
 configure:4126: checking whether  xcrun clang accepts -g
-configure:4146:  xcrun clang -c -g -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:4146:  xcrun clang -c -g  conftest.c >&5
 configure:4146: $? = 0
-configure: failed program was:
-| /* confdefs.h */
-| #define PACKAGE_NAME "libffi"
-| #define PACKAGE_TARNAME "libffi"
-| #define PACKAGE_VERSION "3.3"
-| #define PACKAGE_STRING "libffi 3.3"
-| #define PACKAGE_BUGREPORT "http://github.com/libffi/libffi/issues"
-| #define PACKAGE_URL ""
-| #define PACKAGE "libffi"
-| #define VERSION "3.3"
-| /* end confdefs.h.  */
-| 
-| int
-| main ()
-| {
-| 
-|   ;
-|   return 0;
-| }
-configure:4161:  xcrun clang -c  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
-configure:4161: $? = 0
-configure: failed program was:
-| /* confdefs.h */
-| #define PACKAGE_NAME "libffi"
-| #define PACKAGE_TARNAME "libffi"
-| #define PACKAGE_VERSION "3.3"
-| #define PACKAGE_STRING "libffi 3.3"
-| #define PACKAGE_BUGREPORT "http://github.com/libffi/libffi/issues"
-| #define PACKAGE_URL ""
-| #define PACKAGE "libffi"
-| #define VERSION "3.3"
-| /* end confdefs.h.  */
-| 
-| int
-| main ()
-| {
-| 
-|   ;
-|   return 0;
-| }
-configure:4177:  xcrun clang -c -g -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
-configure:4177: $? = 0
 configure:4187: result: yes
 configure:4204: checking for  xcrun clang option to accept ISO C89
-configure:4267:  xcrun clang  -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:4267:  xcrun clang  -c -arch x86_64   conftest.c >&5
 configure:4267: $? = 0
 configure:4280: result: none needed
 configure:4305: checking whether  xcrun clang understands -c and -o together
@@ -239,98 +155,67 @@ configure:4380: $? = 0
 configure:4399: result: yes (GNU style)
 configure:4424: checking dependency style of  xcrun clang
 configure:4535: result: none
+configure:4564: checking for x86_64-apple-darwin-g++
+configure:4594: result: no
+configure:4564: checking for x86_64-apple-darwin-c++
+configure:4594: result: no
+configure:4564: checking for x86_64-apple-darwin-gpp
+configure:4594: result: no
+configure:4564: checking for x86_64-apple-darwin-aCC
+configure:4594: result: no
+configure:4564: checking for x86_64-apple-darwin-CC
+configure:4594: result: no
+configure:4564: checking for x86_64-apple-darwin-cxx
+configure:4594: result: no
+configure:4564: checking for x86_64-apple-darwin-cc++
+configure:4594: result: no
+configure:4564: checking for x86_64-apple-darwin-cl.exe
+configure:4594: result: no
+configure:4564: checking for x86_64-apple-darwin-FCC
+configure:4594: result: no
+configure:4564: checking for x86_64-apple-darwin-KCC
+configure:4594: result: no
+configure:4564: checking for x86_64-apple-darwin-RCC
+configure:4594: result: no
+configure:4564: checking for x86_64-apple-darwin-xlC_r
+configure:4594: result: no
+configure:4564: checking for x86_64-apple-darwin-xlC
+configure:4594: result: no
+configure:4608: checking for g++
+configure:4624: found /usr/bin/g++
+configure:4635: result: g++
 configure:4662: checking for C++ compiler version
-configure:4671: xcrun clang++ --version >&5
+configure:4671: g++ --version >&5
+Apple clang version 11.0.0 (clang-1100.0.33.8)
+Target: x86_64-apple-darwin19.2.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/4.2.1
+configure:4682: $? = 0
+configure:4671: g++ -v >&5
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/4.2.1
 Apple clang version 11.0.0 (clang-1100.0.33.8)
 Target: x86_64-apple-darwin19.2.0
 Thread model: posix
 InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 configure:4682: $? = 0
-configure:4671: xcrun clang++ -v >&5
-Apple clang version 11.0.0 (clang-1100.0.33.8)
-Target: x86_64-apple-darwin19.2.0
-Thread model: posix
-InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-configure:4682: $? = 0
-configure:4671: xcrun clang++ -V >&5
+configure:4671: g++ -V >&5
 clang: error: unsupported option '-V -Wno-framework-include-private-from-public'
 clang: error: no input files
 configure:4682: $? = 1
-configure:4671: xcrun clang++ -qversion >&5
+configure:4671: g++ -qversion >&5
 clang: error: unknown argument '-qversion', did you mean '--version'?
 clang: error: no input files
 configure:4682: $? = 1
 configure:4686: checking whether we are using the GNU C++ compiler
-configure:4705: xcrun clang++ -c   -g -Os -pipe  -arch x86_64 -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.cpp >&5
-In file included from <built-in>:375:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:4705: g++ -c   conftest.cpp >&5
 configure:4705: $? = 0
 configure:4714: result: yes
-configure:4723: checking whether xcrun clang++ accepts -g
-configure:4743: xcrun clang++ -c -g -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.cpp >&5
-In file included from <built-in>:374:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:4723: checking whether g++ accepts -g
+configure:4743: g++ -c -g  conftest.cpp >&5
 configure:4743: $? = 0
-configure: failed program was:
-| /* confdefs.h */
-| #define PACKAGE_NAME "libffi"
-| #define PACKAGE_TARNAME "libffi"
-| #define PACKAGE_VERSION "3.3"
-| #define PACKAGE_STRING "libffi 3.3"
-| #define PACKAGE_BUGREPORT "http://github.com/libffi/libffi/issues"
-| #define PACKAGE_URL ""
-| #define PACKAGE "libffi"
-| #define VERSION "3.3"
-| /* end confdefs.h.  */
-| 
-| int
-| main ()
-| {
-| 
-|   ;
-|   return 0;
-| }
-configure:4758: xcrun clang++ -c  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.cpp >&5
-In file included from <built-in>:374:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
-configure:4758: $? = 0
-configure: failed program was:
-| /* confdefs.h */
-| #define PACKAGE_NAME "libffi"
-| #define PACKAGE_TARNAME "libffi"
-| #define PACKAGE_VERSION "3.3"
-| #define PACKAGE_STRING "libffi 3.3"
-| #define PACKAGE_BUGREPORT "http://github.com/libffi/libffi/issues"
-| #define PACKAGE_URL ""
-| #define PACKAGE "libffi"
-| #define VERSION "3.3"
-| /* end confdefs.h.  */
-| 
-| int
-| main ()
-| {
-| 
-|   ;
-|   return 0;
-| }
-configure:4774: xcrun clang++ -c -g -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.cpp >&5
-In file included from <built-in>:374:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
-configure:4774: $? = 0
 configure:4784: result: yes
-configure:4809: checking dependency style of xcrun clang++
+configure:4809: checking dependency style of g++
 configure:4920: result: none
 configure:4950: checking dependency style of  xcrun clang
 configure:5059: result: none
@@ -345,21 +230,25 @@ configure:5376: result: /usr/bin/grep -E
 configure:5381: checking for fgrep
 configure:5443: result: /usr/bin/grep -F
 configure:5478: checking for ld used by  xcrun clang
-configure:5545: result: /Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-ld
-configure:5552: checking if the linker (/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-ld) is GNU ld
+configure:5545: result: /Library/Developer/CommandLineTools/usr/bin/ld
+configure:5552: checking if the linker (/Library/Developer/CommandLineTools/usr/bin/ld) is GNU ld
 configure:5567: result: no
 configure:5579: checking for BSD- or MS-compatible name lister (nm)
-configure:5633: result: /Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-nm
-configure:5763: checking the name lister (/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-nm) interface
-configure:5770:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
-configure:5773: /Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-nm "conftest.o"
-/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-nm: object: conftest.o malformed object (unknown load command 1)
+configure:5633: result: no
+configure:5647: checking for x86_64-apple-darwin-dumpbin
+configure:5677: result: no
+configure:5647: checking for x86_64-apple-darwin-link
+configure:5677: result: no
+configure:5691: checking for dumpbin
+configure:5721: result: no
+configure:5691: checking for link
+configure:5707: found /bin/link
+configure:5718: result: link -dump
+configure:5763: checking the name lister (nm) interface
+configure:5770:  xcrun clang -c -arch x86_64   conftest.c >&5
+configure:5773: nm "conftest.o"
 configure:5776: output
+0000000000000000 S _some_variable
 configure:5783: result: BSD nm
 configure:5786: checking whether ln -s works
 configure:5790: result: yes
@@ -369,7 +258,7 @@ configure:5977: checking how to convert x86_64-apple-darwin19.2.0 file names to 
 configure:6017: result: func_convert_file_noop
 configure:6024: checking how to convert x86_64-apple-darwin19.2.0 file names to toolchain format
 configure:6044: result: func_convert_file_noop
-configure:6051: checking for /Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-ld option to reload object files
+configure:6051: checking for /Library/Developer/CommandLineTools/usr/bin/ld option to reload object files
 configure:6058: result: -r
 configure:6092: checking for x86_64-apple-darwin-objdump
 configure:6122: result: no
@@ -385,49 +274,37 @@ configure:6506: result: no
 configure:6536: checking how to associate runtime and link libraries
 configure:6563: result: printf %s\n
 configure:6580: checking for x86_64-apple-darwin-ar
-configure:6607: result: libtool -static
+configure:6610: result: no
+configure:6624: checking for ar
+configure:6640: found /usr/bin/ar
+configure:6651: result: ar
 configure:6688: checking for archiver @FILE support
-configure:6705:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:6705:  xcrun clang -c -arch x86_64   conftest.c >&5
 configure:6705: $? = 0
-configure:6708: libtool -static cru libconftest.a @conftest.lst >&5
-error: /Library/Developer/CommandLineTools/usr/bin/libtool: no output file specified (specify with -o output)
-Usage: /Library/Developer/CommandLineTools/usr/bin/libtool -static [-] file [...] [-filelist listfile[,dirname]] [-arch_only arch] [-sacLT] [-no_warning_for_no_symbols]
-Usage: /Library/Developer/CommandLineTools/usr/bin/libtool -dynamic [-] file [...] [-filelist listfile[,dirname]] [-arch_only arch] [-o output] [-install_name name] [-compatibility_version #] [-current_version #] [-seg1addr 0x#] [-segs_read_only_addr 0x#] [-segs_read_write_addr 0x#] [-seg_addr_table <filename>] [-seg_addr_table_filename <file_system_path>] [-all_load] [-noall_load]
+configure:6708: ar cru libconftest.a @conftest.lst >&5
+ar: @conftest.lst: No such file or directory
 configure:6711: $? = 1
 configure:6731: result: no
 configure:6749: checking for x86_64-apple-darwin-strip
-configure:6776: result: /Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-strip
+configure:6776: result: strip
 configure:6848: checking for x86_64-apple-darwin-ranlib
-configure:6875: result: /Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-ranlib
-configure:7017: checking command to parse /Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-nm output from  xcrun clang object
-configure:7170:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:6878: result: no
+configure:6888: checking for ranlib
+configure:6904: found /usr/bin/ranlib
+configure:6915: result: ranlib
+configure:7017: checking command to parse nm output from  xcrun clang object
+configure:7170:  xcrun clang -c -arch x86_64   conftest.c >&5
 configure:7173: $? = 0
-configure:7177: /Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-nm conftest.o \| sed -n -e 's/^.*[ ]\([BCDEGRST][BCDEGRST]*\)[ ][ ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' \> conftest.nm
-/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-nm: object: conftest.o malformed object (unknown load command 1)
+configure:7177: nm conftest.o \| sed -n -e 's/^.*[ ]\([BCDEGRST][BCDEGRST]*\)[ ][ ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' \> conftest.nm
 configure:7180: $? = 0
-cannot run sed -n -e 's/^.*[	 ]\([BCDEGRST][BCDEGRST]*\)[	 ][	 ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d'
-configure:7170:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+cannot find nm_test_var in conftest.nm
+configure:7170:  xcrun clang -c -arch x86_64   conftest.c >&5
 configure:7173: $? = 0
-configure:7177: /Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-nm conftest.o \| sed -n -e 's/^.*[ ]\([BCDEGRST][BCDEGRST]*\)[ ][ ]*_\([_A-Za-z][_A-Za-z0-9]*\)$/\1 _\2 \2/p' | sed '/ __gnu_lto/d' \> conftest.nm
-/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-nm: object: conftest.o malformed object (unknown load command 1)
+configure:7177: nm conftest.o \| sed -n -e 's/^.*[ ]\([BCDEGRST][BCDEGRST]*\)[ ][ ]*_\([_A-Za-z][_A-Za-z0-9]*\)$/\1 _\2 \2/p' | sed '/ __gnu_lto/d' \> conftest.nm
 configure:7180: $? = 0
-cannot run sed -n -e 's/^.*[	 ]\([BCDEGRST][BCDEGRST]*\)[	 ][	 ]*_\([_A-Za-z][_A-Za-z0-9]*\)$/\1 _\2 \2/p' | sed '/ __gnu_lto/d'
-configure:7284: result: failed
+configure:7246:  xcrun clang -o conftest -arch x86_64   -arch x86_64 conftest.c conftstm.o >&5
+configure:7249: $? = 0
+configure:7287: result: ok
 configure:7334: checking for sysroot
 configure:7364: result: no
 configure:7371: checking for a working dd
@@ -447,11 +324,20 @@ configure:7877: checking for dsymutil
 configure:7893: found /usr/bin/dsymutil
 configure:7904: result: dsymutil
 configure:7929: checking for x86_64-apple-darwin-nmedit
-configure:7956: result: /Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-nmedit
+configure:7959: result: no
+configure:7969: checking for nmedit
+configure:7985: found /usr/bin/nmedit
+configure:7996: result: nmedit
 configure:8021: checking for x86_64-apple-darwin-lipo
-configure:8048: result: /Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-lipo
+configure:8051: result: no
+configure:8061: checking for lipo
+configure:8077: found /usr/bin/lipo
+configure:8088: result: lipo
 configure:8113: checking for x86_64-apple-darwin-otool
-configure:8140: result: /Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-otool
+configure:8143: result: no
+configure:8153: checking for otool
+configure:8169: found /usr/bin/otool
+configure:8180: result: otool
 configure:8205: checking for x86_64-apple-darwin-otool64
 configure:8235: result: no
 configure:8245: checking for otool64
@@ -460,43 +346,23 @@ configure:8320: checking for -single_module linker flag
  xcrun clang -arch x86_64  -arch x86_64 -o libconftest.dylib -dynamiclib -Wl,-single_module conftest.c
 configure:8353: result: yes
 configure:8356: checking for -exported_symbols_list linker flag
-configure:8376:  xcrun clang -o conftest -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -arch x86_64 -Wl,-exported_symbols_list,conftest.sym conftest.c  >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:8376:  xcrun clang -o conftest -arch x86_64   -arch x86_64 -Wl,-exported_symbols_list,conftest.sym conftest.c  >&5
 configure:8376: $? = 0
 configure:8386: result: yes
 configure:8389: checking for -force_load linker flag
  xcrun clang -arch x86_64  -c -o conftest.o conftest.c
-libtool -static cru libconftest.a conftest.o
-error: /Library/Developer/CommandLineTools/usr/bin/libtool: no output file specified (specify with -o output)
-Usage: /Library/Developer/CommandLineTools/usr/bin/libtool -static [-] file [...] [-filelist listfile[,dirname]] [-arch_only arch] [-sacLT] [-no_warning_for_no_symbols]
-Usage: /Library/Developer/CommandLineTools/usr/bin/libtool -dynamic [-] file [...] [-filelist listfile[,dirname]] [-arch_only arch] [-o output] [-install_name name] [-compatibility_version #] [-current_version #] [-seg1addr 0x#] [-segs_read_only_addr 0x#] [-segs_read_write_addr 0x#] [-seg_addr_table <filename>] [-seg_addr_table_filename <file_system_path>] [-all_load] [-noall_load]
-/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-ranlib libconftest.a
-error: /Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-ranlib: can't open file: libconftest.a (No such file or directory)
+ar cru libconftest.a conftest.o
+ranlib libconftest.a
  xcrun clang -arch x86_64  -arch x86_64 -o conftest conftest.c -Wl,-force_load,./libconftest.a
-ld: file not found: ./libconftest.a
-clang: error: linker command failed with exit code 1 (use -v to see invocation)
-configure:8421: result: no
+configure:8421: result: yes
 configure:8498: checking how to run the C preprocessor
-configure:8529:  xcrun clang -E -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:8529:  xcrun clang -E  conftest.c
 configure:8529: $? = 0
-configure:8543:  xcrun clang -E -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
+configure:8543:  xcrun clang -E  conftest.c
 conftest.c:11:10: fatal error: 'ac_nonexistent.h' file not found
 #include <ac_nonexistent.h>
          ^~~~~~~~~~~~~~~~~~
-1 warning and 1 error generated.
+1 error generated.
 configure:8543: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -511,22 +377,13 @@ configure: failed program was:
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
 configure:8568: result:  xcrun clang -E
-configure:8588:  xcrun clang -E -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:8588:  xcrun clang -E  conftest.c
 configure:8588: $? = 0
-configure:8602:  xcrun clang -E -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
+configure:8602:  xcrun clang -E  conftest.c
 conftest.c:11:10: fatal error: 'ac_nonexistent.h' file not found
 #include <ac_nonexistent.h>
          ^~~~~~~~~~~~~~~~~~
-1 warning and 1 error generated.
+1 error generated.
 configure:8602: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -541,159 +398,74 @@ configure: failed program was:
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
 configure:8631: checking for ANSI C header files
-configure:8651:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:8651:  xcrun clang -c -arch x86_64   conftest.c >&5
 configure:8651: $? = 0
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
-configure:8724:  xcrun clang -o conftest -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -arch x86_64 conftest.c  >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:8724:  xcrun clang -o conftest -arch x86_64   -arch x86_64 conftest.c  >&5
 configure:8724: $? = 0
 configure:8724: ./conftest
 configure:8724: $? = 0
 configure:8735: result: yes
 configure:8748: checking for sys/types.h
-configure:8748:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:8748:  xcrun clang -c -arch x86_64   conftest.c >&5
 configure:8748: $? = 0
 configure:8748: result: yes
 configure:8748: checking for sys/stat.h
-configure:8748:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:8748:  xcrun clang -c -arch x86_64   conftest.c >&5
 configure:8748: $? = 0
 configure:8748: result: yes
 configure:8748: checking for stdlib.h
-configure:8748:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:8748:  xcrun clang -c -arch x86_64   conftest.c >&5
 configure:8748: $? = 0
 configure:8748: result: yes
 configure:8748: checking for string.h
-configure:8748:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:8748:  xcrun clang -c -arch x86_64   conftest.c >&5
 configure:8748: $? = 0
 configure:8748: result: yes
 configure:8748: checking for memory.h
-configure:8748:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:8748:  xcrun clang -c -arch x86_64   conftest.c >&5
 configure:8748: $? = 0
 configure:8748: result: yes
 configure:8748: checking for strings.h
-configure:8748:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:8748:  xcrun clang -c -arch x86_64   conftest.c >&5
 configure:8748: $? = 0
 configure:8748: result: yes
 configure:8748: checking for inttypes.h
-configure:8748:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:8748:  xcrun clang -c -arch x86_64   conftest.c >&5
 configure:8748: $? = 0
 configure:8748: result: yes
 configure:8748: checking for stdint.h
-configure:8748:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:8748:  xcrun clang -c -arch x86_64   conftest.c >&5
 configure:8748: $? = 0
 configure:8748: result: yes
 configure:8748: checking for unistd.h
-configure:8748:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:8748:  xcrun clang -c -arch x86_64   conftest.c >&5
 configure:8748: $? = 0
 configure:8748: result: yes
 configure:8762: checking for dlfcn.h
-configure:8762:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:8762:  xcrun clang -c -arch x86_64   conftest.c >&5
 configure:8762: $? = 0
 configure:8762: result: yes
 configure:9029: checking for objdir
 configure:9044: result: .libs
 configure:9308: checking if  xcrun clang supports -fno-rtti -fno-exceptions
-configure:9326:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -fno-rtti -fno-exceptions conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:9326:  xcrun clang -c -arch x86_64   -fno-rtti -fno-exceptions conftest.c >&5
 configure:9330: $? = 0
 configure:9343: result: yes
 configure:9701: checking for  xcrun clang option to produce PIC
 configure:9708: result: -fno-common -DPIC
 configure:9716: checking if  xcrun clang PIC flag -fno-common -DPIC works
-configure:9734:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -fno-common -DPIC -DPIC conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:9734:  xcrun clang -c -arch x86_64   -fno-common -DPIC -DPIC conftest.c >&5
 configure:9738: $? = 0
 configure:9751: result: yes
 configure:9780: checking if  xcrun clang static flag -static works
 configure:9808: result: no
 configure:9823: checking if  xcrun clang supports -c -o file.o
-configure:9844:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -o out/conftest2.o conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:9844:  xcrun clang -c -arch x86_64   -o out/conftest2.o conftest.c >&5
 configure:9848: $? = 0
 configure:9870: result: yes
 configure:9878: checking if  xcrun clang supports -c -o file.o
 configure:9925: result: yes
-configure:9958: checking whether the  xcrun clang linker (/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-ld) supports shared libraries
+configure:9958: checking whether the  xcrun clang linker (/Library/Developer/CommandLineTools/usr/bin/ld) supports shared libraries
 configure:11221: result: yes
 configure:11461: checking dynamic linker characteristics
 configure:12291: result: darwin dyld
@@ -708,22 +480,13 @@ configure:13056: result: yes
 configure:13059: checking whether to build static libraries
 configure:13063: result: no
 configure:13086: checking how to run the C++ preprocessor
-configure:13113: xcrun clang++ -E -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.cpp
-In file included from <built-in>:374:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:13113: g++ -E  conftest.cpp
 configure:13113: $? = 0
-configure:13127: xcrun clang++ -E -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.cpp
-In file included from <built-in>:374:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
+configure:13127: g++ -E  conftest.cpp
 conftest.cpp:23:10: fatal error: 'ac_nonexistent.h' file not found
 #include <ac_nonexistent.h>
          ^~~~~~~~~~~~~~~~~~
-1 warning and 1 error generated.
+1 error generated.
 configure:13127: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -749,23 +512,14 @@ configure: failed program was:
 | #define LT_OBJDIR ".libs/"
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
-configure:13152: result: xcrun clang++ -E
-configure:13172: xcrun clang++ -E -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.cpp
-In file included from <built-in>:374:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:13152: result: g++ -E
+configure:13172: g++ -E  conftest.cpp
 configure:13172: $? = 0
-configure:13186: xcrun clang++ -E -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.cpp
-In file included from <built-in>:374:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
+configure:13186: g++ -E  conftest.cpp
 conftest.cpp:23:10: fatal error: 'ac_nonexistent.h' file not found
 #include <ac_nonexistent.h>
          ^~~~~~~~~~~~~~~~~~
-1 warning and 1 error generated.
+1 error generated.
 configure:13186: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -791,70 +545,46 @@ configure: failed program was:
 | #define LT_OBJDIR ".libs/"
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
-configure:13348: checking for ld used by xcrun clang++
-configure:13415: result: /Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-ld
-configure:13422: checking if the linker (/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-ld) is GNU ld
+configure:13348: checking for ld used by g++
+configure:13415: result: /Library/Developer/CommandLineTools/usr/bin/ld
+configure:13422: checking if the linker (/Library/Developer/CommandLineTools/usr/bin/ld) is GNU ld
 configure:13437: result: no
-configure:13492: checking whether the xcrun clang++ linker (/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-ld) supports shared libraries
+configure:13492: checking whether the g++ linker (/Library/Developer/CommandLineTools/usr/bin/ld) supports shared libraries
 configure:14565: result: yes
-configure:14601: xcrun clang++ -c   -g -Os -pipe  -arch x86_64 -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.cpp >&5
-In file included from <built-in>:375:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:14601: g++ -c -g -O2  conftest.cpp >&5
 configure:14604: $? = 0
-configure:15085: checking for xcrun clang++ option to produce PIC
+configure:15085: checking for g++ option to produce PIC
 configure:15092: result: -fno-common -DPIC
-configure:15100: checking if xcrun clang++ PIC flag -fno-common -DPIC works
-configure:15118: xcrun clang++ -c   -g -Os -pipe  -arch x86_64 -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -fno-common -DPIC -DPIC conftest.cpp >&5
-In file included from <built-in>:375:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:15100: checking if g++ PIC flag -fno-common -DPIC works
+configure:15118: g++ -c -g -O2  -fno-common -DPIC -DPIC conftest.cpp >&5
 configure:15122: $? = 0
 configure:15135: result: yes
-configure:15158: checking if xcrun clang++ static flag -static works
+configure:15158: checking if g++ static flag -static works
 configure:15186: result: no
-configure:15198: checking if xcrun clang++ supports -c -o file.o
-configure:15219: xcrun clang++ -c   -g -Os -pipe  -arch x86_64 -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -o out/conftest2.o conftest.cpp >&5
-In file included from <built-in>:375:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:15198: checking if g++ supports -c -o file.o
+configure:15219: g++ -c -g -O2  -o out/conftest2.o conftest.cpp >&5
 configure:15223: $? = 0
 configure:15245: result: yes
-configure:15250: checking if xcrun clang++ supports -c -o file.o
+configure:15250: checking if g++ supports -c -o file.o
 configure:15297: result: yes
-configure:15327: checking whether the xcrun clang++ linker (/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-ld) supports shared libraries
+configure:15327: checking whether the g++ linker (/Library/Developer/CommandLineTools/usr/bin/ld) supports shared libraries
 configure:15370: result: yes
 configure:15511: checking dynamic linker characteristics
 configure:16268: result: darwin dyld
 configure:16333: checking how to hardcode library paths into programs
 configure:16358: result: immediate
 configure:16426: checking size of size_t
-configure:16431:  xcrun clang -o conftest -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -arch x86_64 conftest.c  >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:16431:  xcrun clang -o conftest -arch x86_64   -arch x86_64 conftest.c  >&5
 configure:16431: $? = 0
 configure:16431: ./conftest
 configure:16431: $? = 0
 configure:16445: result: 8
 configure:16456: checking for C compiler vendor
-configure:16504:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
+configure:16504:  xcrun clang -c -arch x86_64   conftest.c >&5
 conftest.c:30:9: error: use of undeclared identifier 'thisisanerror'
         thisisanerror;
         ^
-1 warning and 1 error generated.
+1 error generated.
 configure:16504: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -892,15 +622,11 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:16504:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
+configure:16504:  xcrun clang -c -arch x86_64   conftest.c >&5
 conftest.c:30:9: error: use of undeclared identifier 'thisisanerror'
         thisisanerror;
         ^
-1 warning and 1 error generated.
+1 error generated.
 configure:16504: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -938,15 +664,11 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:16504:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
+configure:16504:  xcrun clang -c -arch x86_64   conftest.c >&5
 conftest.c:30:9: error: use of undeclared identifier 'thisisanerror'
         thisisanerror;
         ^
-1 warning and 1 error generated.
+1 error generated.
 configure:16504: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -984,16 +706,11 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:16504:  xcrun clang -c -arch x86_64  -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:16504:  xcrun clang -c -arch x86_64   conftest.c >&5
 configure:16504: $? = 0
 configure:16512: result: clang
 configure:17357: checking CFLAGS for maximum warnings
-configure:17377:  xcrun clang -c -arch x86_64  -warn all  -warn all -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
+configure:17377:  xcrun clang -c -arch x86_64  -warn all  -warn all  conftest.c >&5
 clang: error: unknown argument: '-warn'
 clang: error: unknown argument: '-warn'
 clang: error: no such file or directory: 'all'
@@ -1031,12 +748,7 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:17377:  xcrun clang -c -arch x86_64  -pedantic  -Wall -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:17377:  xcrun clang -c -arch x86_64  -pedantic  -Wall  conftest.c >&5
 configure:17377: $? = 0
 configure:17385: result: -Wall
 configure:17405: : CFLAGS="$CFLAGS"
@@ -1044,41 +756,21 @@ configure:17408: $? = 0
 configure:17445: checking whether to enable maintainer-specific portions of Makefiles
 configure:17454: result: no
 configure:17470: checking sys/mman.h usability
-configure:17470:  xcrun clang -c -arch x86_64  -Wall -fexceptions -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:363:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:17470:  xcrun clang -c -arch x86_64  -Wall -fexceptions  conftest.c >&5
 configure:17470: $? = 0
 configure:17470: result: yes
 configure:17470: checking sys/mman.h presence
-configure:17470:  xcrun clang -E -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c
-In file included from <built-in>:362:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:17470:  xcrun clang -E  conftest.c
 configure:17470: $? = 0
 configure:17470: result: yes
 configure:17470: checking for sys/mman.h
 configure:17470: result: yes
 configure:17483: checking for mmap
-configure:17483:  xcrun clang -o conftest -arch x86_64  -Wall -fexceptions -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -arch x86_64 conftest.c  >&5
-In file included from <built-in>:363:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:17483:  xcrun clang -o conftest -arch x86_64  -Wall -fexceptions  -arch x86_64 conftest.c  >&5
 configure:17483: $? = 0
 configure:17483: result: yes
 configure:17483: checking for mkostemp
-configure:17483:  xcrun clang -o conftest -arch x86_64  -Wall -fexceptions -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -arch x86_64 conftest.c  >&5
-In file included from <built-in>:363:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:17483:  xcrun clang -o conftest -arch x86_64  -Wall -fexceptions  -arch x86_64 conftest.c  >&5
 configure:17483: $? = 0
 configure:17483: result: yes
 configure:17493: checking for sys/mman.h
@@ -1090,15 +782,11 @@ configure:17531: result: yes
 configure:17533: checking whether mmap from /dev/zero works
 configure:17555: result: no
 configure:17559: checking for MAP_ANON(YMOUS)
-configure:17582:  xcrun clang -c -arch x86_64  -Wall -fexceptions -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:363:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
+configure:17582:  xcrun clang -c -arch x86_64  -Wall -fexceptions  conftest.c >&5
 conftest.c:38:5: warning: unused variable 'n' [-Wunused-variable]
 int n = MAP_ANONYMOUS;
     ^
-2 warnings generated.
+1 warning generated.
 configure:17582: $? = 0
 configure:17589: result: yes
 configure:17595: checking whether mmap with MAP_ANON(YMOUS) works
@@ -1106,35 +794,22 @@ configure:17612: result: yes
 configure:17655: checking for ANSI C header files
 configure:17759: result: yes
 configure:17769: checking for memcpy
-configure:17769:  xcrun clang -o conftest -arch x86_64  -Wall -fexceptions -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -arch x86_64 conftest.c  >&5
-In file included from <built-in>:363:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
+configure:17769:  xcrun clang -o conftest -arch x86_64  -Wall -fexceptions  -arch x86_64 conftest.c  >&5
 conftest.c:53:6: warning: incompatible redeclaration of library function 'memcpy' [-Wincompatible-library-redeclaration]
 char memcpy ();
      ^
 conftest.c:53:6: note: 'memcpy' is a builtin with type 'void *(void *, const void *, unsigned long)'
-2 warnings generated.
+1 warning generated.
 configure:17769: $? = 0
 configure:17769: result: yes
 configure:17778: checking for size_t
-configure:17778:  xcrun clang -c -arch x86_64  -Wall -fexceptions -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:363:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:17778:  xcrun clang -c -arch x86_64  -Wall -fexceptions  conftest.c >&5
 configure:17778: $? = 0
-configure:17778:  xcrun clang -c -arch x86_64  -Wall -fexceptions -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:363:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
+configure:17778:  xcrun clang -c -arch x86_64  -Wall -fexceptions  conftest.c >&5
 conftest.c:67:21: error: expected expression
 if (sizeof ((size_t)))
                     ^
-1 warning and 1 error generated.
+1 error generated.
 configure:17778: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -1210,69 +885,35 @@ configure: failed program was:
 | }
 configure:17778: result: yes
 configure:17791: checking for working alloca.h
-configure:17808:  xcrun clang -o conftest -arch x86_64  -Wall -fexceptions -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -arch x86_64 conftest.c  >&5
-In file included from <built-in>:363:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:17808:  xcrun clang -o conftest -arch x86_64  -Wall -fexceptions  -arch x86_64 conftest.c  >&5
 configure:17808: $? = 0
 configure:17816: result: yes
 configure:17824: checking for alloca
-configure:17861:  xcrun clang -o conftest -arch x86_64  -Wall -fexceptions -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -arch x86_64 conftest.c  >&5
-In file included from <built-in>:363:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:17861:  xcrun clang -o conftest -arch x86_64  -Wall -fexceptions  -arch x86_64 conftest.c  >&5
 configure:17861: $? = 0
 configure:17869: result: yes
 configure:17980: checking size of double
-configure:17985:  xcrun clang -o conftest -arch x86_64  -Wall -fexceptions -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -arch x86_64 conftest.c  >&5
-In file included from <built-in>:363:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:17985:  xcrun clang -o conftest -arch x86_64  -Wall -fexceptions  -arch x86_64 conftest.c  >&5
 configure:17985: $? = 0
 configure:17985: ./conftest
 configure:17985: $? = 0
 configure:17999: result: 8
 configure:18013: checking size of long double
-configure:18018:  xcrun clang -o conftest -arch x86_64  -Wall -fexceptions -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -arch x86_64 conftest.c  >&5
-In file included from <built-in>:363:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:18018:  xcrun clang -o conftest -arch x86_64  -Wall -fexceptions  -arch x86_64 conftest.c  >&5
 configure:18018: $? = 0
 configure:18018: ./conftest
 configure:18018: $? = 0
 configure:18032: result: 16
 configure:18065: checking whether byte ordering is bigendian
-configure:18080:  xcrun clang -c -arch x86_64  -Wall -fexceptions -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:363:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:18080:  xcrun clang -c -arch x86_64  -Wall -fexceptions  conftest.c >&5
 configure:18080: $? = 0
-configure:18125:  xcrun clang -c -arch x86_64  -Wall -fexceptions -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:363:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
-1 warning generated.
+configure:18125:  xcrun clang -c -arch x86_64  -Wall -fexceptions  conftest.c >&5
 configure:18125: $? = 0
-configure:18143:  xcrun clang -c -arch x86_64  -Wall -fexceptions -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:363:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
+configure:18143:  xcrun clang -c -arch x86_64  -Wall -fexceptions  conftest.c >&5
 conftest.c:43:4: error: use of undeclared identifier 'not'
                  not big endian
                  ^
-1 warning and 1 error generated.
+1 error generated.
 configure:18143: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -1325,15 +966,11 @@ configure: failed program was:
 | }
 configure:18271: result: no
 configure:18290: checking assembler .cfi pseudo-op support
-configure:18308:  xcrun clang -c -arch x86_64  -Wall -fexceptions -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:363:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
+configure:18308:  xcrun clang -c -arch x86_64  -Wall -fexceptions  conftest.c >&5
 <inline asm>:1:14: error: Expected an identifier
 .cfi_sections
              ^
-1 warning and 1 error generated.
+1 error generated.
 configure:18308: $? = 1
 configure: failed program was:
 | /* confdefs.h */
@@ -1383,21 +1020,15 @@ configure:18316: result: no
 configure:18403: checking assembler supports pc related relocs
 configure:18416: result: yes
 configure:18462: checking for _ prefix in compiled symbols
-configure:18472:  xcrun clang -c -arch x86_64  -Wall -fexceptions -DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   conftest.c >&5
-In file included from <built-in>:363:
-<command line>:1:25: warning: missing terminating '"' character [-Winvalid-pp-token]
-#define RUBY_EXTCONF_H \"extconf.h\"
-                        ^
+configure:18472:  xcrun clang -c -arch x86_64  -Wall -fexceptions  conftest.c >&5
 conftest.c:2:12: warning: expression result unused [-Wunused-value]
 int main(){nm_test_func;return 0;}
            ^~~~~~~~~~~~
-2 warnings generated.
+1 warning generated.
 configure:18475: $? = 0
-configure:18479: /Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-nm conftest.o \|  \> conftest.nm
-/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-nm: object: conftest.o malformed object (unknown load command 1)
+configure:18479: nm conftest.o \| sed -n -e 's/^.*[	 ]\([BCDEGRST][BCDEGRST]*\)[	 ][	 ]*_\([_A-Za-z][_A-Za-z0-9]*\)$/\1 _\2 \2/p' | sed '/ __gnu_lto/d' \> conftest.nm
 configure:18482: $? = 0
-configure: cannot run 
-configure:18504: result: no
+configure:18504: result: yes
 configure:18540: checking toolchain supports unwind section type
 configure:18569: result: no
 configure:18579: checking whether .eh_frame section should be read-only
@@ -1407,8 +1038,8 @@ configure:18625:  xcrun clang -Werror -S conftest.c -o conftest.s 1>&5
 configure:18628: $? = 0
 configure:18637: result: yes
 configure:18776: checking for ld used by  xcrun clang
-configure:18843: result: /Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-ld
-configure:18850: checking if the linker (/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-ld) is GNU ld
+configure:18843: result: /Library/Developer/CommandLineTools/usr/bin/ld
+configure:18850: checking if the linker (/Library/Developer/CommandLineTools/usr/bin/ld) is GNU ld
 configure:18865: result: no
 configure:19178: versioning on shared library symbols is no
 configure:19299: checking that generated files are newer than configure
@@ -1430,20 +1061,20 @@ generated by GNU Autoconf 2.69.  Invocation command line was
 
 on Mars.local
 
-config.status:1221: creating include/Makefile
-config.status:1221: creating include/ffi.h
-config.status:1221: creating Makefile
-config.status:1221: creating testsuite/Makefile
-config.status:1221: creating man/Makefile
-config.status:1221: creating doc/Makefile
-config.status:1221: creating libffi.pc
-config.status:1221: creating fficonfig.h
-config.status:1435: executing buildir commands
-config.status:1448: skipping top_srcdir/Makefile - not created
-config.status:1435: executing depfiles commands
-config.status:1435: executing libtool commands
-config.status:1435: executing include commands
-config.status:1435: executing src commands
+config.status:1222: creating include/Makefile
+config.status:1222: creating include/ffi.h
+config.status:1222: creating Makefile
+config.status:1222: creating testsuite/Makefile
+config.status:1222: creating man/Makefile
+config.status:1222: creating doc/Makefile
+config.status:1222: creating libffi.pc
+config.status:1222: creating fficonfig.h
+config.status:1436: executing buildir commands
+config.status:1449: skipping top_srcdir/Makefile - not created
+config.status:1436: executing depfiles commands
+config.status:1436: executing libtool commands
+config.status:1436: executing include commands
+config.status:1436: executing src commands
 
 ## ---------------- ##
 ## Cache variables. ##
@@ -1459,8 +1090,8 @@ ac_cv_env_CCASFLAGS_set=
 ac_cv_env_CCASFLAGS_value=
 ac_cv_env_CCAS_set=
 ac_cv_env_CCAS_value=
-ac_cv_env_CPPFLAGS_set=set
-ac_cv_env_CPPFLAGS_value='-DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT  '
+ac_cv_env_CPPFLAGS_set=
+ac_cv_env_CPPFLAGS_value=
 ac_cv_env_CPP_set=
 ac_cv_env_CPP_value=
 ac_cv_env_CXXCPP_set=
@@ -1501,18 +1132,21 @@ ac_cv_path_SED=/usr/bin/sed
 ac_cv_path_ax_enable_builddir_sed=sed
 ac_cv_path_install='/usr/bin/install -c'
 ac_cv_path_lt_DD=/bin/dd
-ac_cv_prog_AR='libtool -static'
 ac_cv_prog_AWK=awk
 ac_cv_prog_CC=' xcrun clang'
 ac_cv_prog_CPP=' xcrun clang -E'
-ac_cv_prog_CXXCPP='xcrun clang++ -E'
-ac_cv_prog_LIPO=/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-lipo
-ac_cv_prog_NMEDIT=/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-nmedit
-ac_cv_prog_OTOOL=/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-otool
-ac_cv_prog_RANLIB=/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-ranlib
-ac_cv_prog_STRIP=/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-strip
+ac_cv_prog_CXXCPP='g++ -E'
+ac_cv_prog_STRIP=strip
+ac_cv_prog_ac_ct_AR=ar
+ac_cv_prog_ac_ct_CXX=g++
 ac_cv_prog_ac_ct_DSYMUTIL=dsymutil
+ac_cv_prog_ac_ct_DUMPBIN='link -dump'
+ac_cv_prog_ac_ct_LIPO=lipo
+ac_cv_prog_ac_ct_NMEDIT=nmedit
 ac_cv_prog_ac_ct_OBJDUMP=objdump
+ac_cv_prog_ac_ct_OTOOL=otool
+ac_cv_prog_ac_ct_RANLIB=ranlib
+ac_cv_prog_ac_ct_STRIP=strip
 ac_cv_prog_cc_c89=
 ac_cv_prog_cc_g=yes
 ac_cv_prog_cxx_g=yes
@@ -1540,13 +1174,13 @@ lt_cv_deplibs_check_method=pass_all
 lt_cv_file_magic_cmd='$MAGIC_CMD'
 lt_cv_file_magic_test_file=
 lt_cv_ld_exported_symbols_list=yes
-lt_cv_ld_force_load=no
+lt_cv_ld_force_load=yes
 lt_cv_ld_reload_flag=-r
 lt_cv_nm_interface='BSD nm'
 lt_cv_objdir=.libs
-lt_cv_path_LD=/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-ld
-lt_cv_path_LDCXX=/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-ld
-lt_cv_path_NM=/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-nm
+lt_cv_path_LD=/Library/Developer/CommandLineTools/usr/bin/ld
+lt_cv_path_LDCXX=/Library/Developer/CommandLineTools/usr/bin/ld
+lt_cv_path_NM=no
 lt_cv_path_mainfest_tool=no
 lt_cv_prog_compiler_c_o=yes
 lt_cv_prog_compiler_c_o_CXX=yes
@@ -1560,13 +1194,13 @@ lt_cv_prog_compiler_static_works_CXX=no
 lt_cv_prog_gnu_ld=no
 lt_cv_prog_gnu_ldcxx=no
 lt_cv_sharedlib_from_linklib_cmd='printf %s\n'
-lt_cv_sys_global_symbol_pipe=
+lt_cv_sys_global_symbol_pipe='sed -n -e '\''s/^.*[	 ]\([BCDEGRST][BCDEGRST]*\)[	 ][	 ]*_\([_A-Za-z][_A-Za-z0-9]*\)$/\1 _\2 \2/p'\'' | sed '\''/ __gnu_lto/d'\'''
 lt_cv_sys_global_symbol_to_c_name_address='sed -n -e '\''s/^: \(.*\) .*$/  {"\1", (void *) 0},/p'\'' -e '\''s/^[BCDEGRST][BCDEGRST]* .* \(.*\)$/  {"\1", (void *) \&\1},/p'\'''
 lt_cv_sys_global_symbol_to_c_name_address_lib_prefix='sed -n -e '\''s/^: \(.*\) .*$/  {"\1", (void *) 0},/p'\'' -e '\''s/^[BCDEGRST][BCDEGRST]* .* \(lib.*\)$/  {"\1", (void *) \&\1},/p'\'' -e '\''s/^[BCDEGRST][BCDEGRST]* .* \(.*\)$/  {"lib\1", (void *) \&\1},/p'\'''
-lt_cv_sys_global_symbol_to_cdecl=
+lt_cv_sys_global_symbol_to_cdecl='sed -n -e '\''s/^T .* \(.*\)$/extern int \1();/p'\'' -e '\''s/^[BCDEGRST][BCDEGRST]* .* \(.*\)$/extern char \1;/p'\'''
 lt_cv_sys_global_symbol_to_import=
 lt_cv_sys_max_cmd_len=196608
-lt_cv_sys_symbol_underscore=no
+lt_cv_sys_symbol_underscore=yes
 lt_cv_to_host_file_cmd=func_convert_file_noop
 lt_cv_to_tool_file_cmd=func_convert_file_noop
 lt_cv_truncate_bin='/bin/dd bs=4096 count=1'
@@ -1587,7 +1221,7 @@ AM_DEFAULT_VERBOSITY='1'
 AM_LTLDFLAGS=''
 AM_RUNTESTFLAGS=''
 AM_V='$(V)'
-AR='libtool -static'
+AR='ar'
 AUTOCONF='${SHELL} /Users/jimmy/Workspace/jiwei.github.io/vendor/bundle/ruby/2.6.0/gems/ffi-1.12.1/ext/ffi_c/libffi/missing autoconf'
 AUTOHEADER='${SHELL} /Users/jimmy/Workspace/jiwei.github.io/vendor/bundle/ruby/2.6.0/gems/ffi-1.12.1/ext/ffi_c/libffi/missing autoheader'
 AUTOMAKE='${SHELL} /Users/jimmy/Workspace/jiwei.github.io/vendor/bundle/ruby/2.6.0/gems/ffi-1.12.1/ext/ffi_c/libffi/missing automake-1.16'
@@ -1601,17 +1235,17 @@ CCASFLAGS='-arch x86_64 '
 CCDEPMODE='depmode=none'
 CFLAGS='-arch x86_64  -Wall -fexceptions'
 CPP=' xcrun clang -E'
-CPPFLAGS='-DRUBY_EXTCONF_H=\"extconf.h\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT  '
-CXX='xcrun clang++'
-CXXCPP='xcrun clang++ -E'
+CPPFLAGS=''
+CXX='g++'
+CXXCPP='g++ -E'
 CXXDEPMODE='depmode=none'
-CXXFLAGS='  -g -Os -pipe  -arch x86_64'
+CXXFLAGS='-g -O2'
 CYGPATH_W='echo'
 DEFS='-DHAVE_CONFIG_H'
 DEPDIR='.deps'
 DLLTOOL='false'
 DSYMUTIL='dsymutil'
-DUMPBIN=''
+DUMPBIN=':'
 ECHO_C='\c'
 ECHO_N=''
 ECHO_T=''
@@ -1630,7 +1264,7 @@ INSTALL_DATA='${INSTALL} -m 644'
 INSTALL_PROGRAM='${INSTALL}'
 INSTALL_SCRIPT='${INSTALL}'
 INSTALL_STRIP_PROGRAM='$(install_sh) -c -s'
-LD='/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-ld'
+LD='/Library/Developer/CommandLineTools/usr/bin/ld'
 LDFLAGS='-arch x86_64'
 LIBFFI_BUILD_VERSIONED_SHLIB_FALSE=''
 LIBFFI_BUILD_VERSIONED_SHLIB_GNU_FALSE=''
@@ -1641,7 +1275,7 @@ LIBFFI_BUILD_VERSIONED_SHLIB_TRUE='#'
 LIBOBJS=''
 LIBS=''
 LIBTOOL='$(SHELL) $(top_builddir)/libtool'
-LIPO='/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-lipo'
+LIPO='lipo'
 LN_S='ln -s'
 LTLIBOBJS=''
 LT_SYS_LIBRARY_PATH=''
@@ -1651,13 +1285,13 @@ MAINTAINER_MODE_TRUE='#'
 MAKEINFO='${SHELL} /Users/jimmy/Workspace/jiwei.github.io/vendor/bundle/ruby/2.6.0/gems/ffi-1.12.1/ext/ffi_c/libffi/missing makeinfo'
 MANIFEST_TOOL=':'
 MKDIR_P='/Users/jimmy/Workspace/jiwei.github.io/vendor/bundle/ruby/2.6.0/gems/ffi-1.12.1/ext/ffi_c/libffi/install-sh -c -d'
-NM='/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-nm'
-NMEDIT='/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-nmedit'
+NM='nm'
+NMEDIT='nmedit'
 OBJDUMP='objdump'
 OBJEXT='o'
 OPT_LDFLAGS=''
 OTOOL64=':'
-OTOOL='/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-otool'
+OTOOL='otool'
 PACKAGE='libffi'
 PACKAGE_BUGREPORT='http://github.com/libffi/libffi/issues'
 PACKAGE_NAME='libffi'
@@ -1667,22 +1301,22 @@ PACKAGE_URL=''
 PACKAGE_VERSION='3.3'
 PATH_SEPARATOR=':'
 PRTDIAG=''
-RANLIB='/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-ranlib'
+RANLIB='ranlib'
 SECTION_LDFLAGS=''
 SED='/usr/bin/sed'
 SET_MAKE=''
 SHELL='/bin/sh'
-STRIP='/Users/jimmy/Library/anaconda3/bin/x86_64-apple-darwin13.4.0-strip'
+STRIP='strip'
 TARGET='X86_64'
 TARGETDIR='x86'
 TARGET_OBJ=' src/x86/ffi64.lo src/x86/unix64.lo src/x86/ffiw64.lo src/x86/win64.lo'
 TESTSUBDIR_FALSE='#'
 TESTSUBDIR_TRUE=''
 VERSION='3.3'
-ac_ct_AR=''
+ac_ct_AR='ar'
 ac_ct_CC=''
-ac_ct_CXX=''
-ac_ct_DUMPBIN=''
+ac_ct_CXX='g++'
+ac_ct_DUMPBIN='link -dump'
 am__EXEEXT_FALSE=''
 am__EXEEXT_TRUE='#'
 am__fastdepCCAS_FALSE=''
@@ -1733,7 +1367,7 @@ psdir='${docdir}'
 runstatedir='${localstatedir}/run'
 sbindir='${exec_prefix}/sbin'
 sharedstatedir='${prefix}/com'
-sys_symbol_underscore='no'
+sys_symbol_underscore='yes'
 sysconfdir='${prefix}/etc'
 target='x86_64-apple-darwin'
 target_alias='x86_64-apple-darwin'
@@ -1782,6 +1416,7 @@ toolexeclibdir='${libdir}'
 #define SIZEOF_LONG_DOUBLE 16
 #define HAVE_LONG_DOUBLE 1
 #define HAVE_AS_X86_PCREL 1
+#define SYMBOL_UNDERSCORE 1
 #define FFI_MMAP_EXEC_WRIT 1
 #define EH_FRAME_FLAGS "aw"
 #define HAVE_HIDDEN_VISIBILITY_ATTRIBUTE 1
