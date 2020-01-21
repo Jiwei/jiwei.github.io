@@ -1,0 +1,55 @@
+name_field.bind_to song, :title
+
+http://www.rawblock.com/2007/02/07/transparent-property-change-listeners-in-ruby/
+http://www.rawblock.com/2007/02/15/jruby-can-save-swing/
+
+class PostForm < Minimal::Component
+  depends_on [:post, :categories]
+
+  def build
+    fieldset(:main) do
+      input :title
+      input :body
+    end
+
+    fieldset(:sidebar) do
+      checkbox_group :categories, post.categories
+    end
+  end
+
+  def to_html
+    component.render(:object => post, :categories => categories)
+  end
+end
+
+class Input
+  def initialize(name, binding = name)
+    @name, @binding = name, binding
+    build
+  end
+
+  def build
+    @template = %(<input type="text" name="#{name}" value="[value]">)
+  end
+
+  def render(object)
+    template.sub('[value]', object.send(binding))
+  end
+end
+
+class CheckboxGroup
+  def initialize(name, collection, binding = :id)
+    build
+  end
+
+  def build
+    @tags = collection.map do |element|
+      Checkbox.new(name, :value => element.send(binding))
+    end
+  end
+
+  def render(collection)
+    values = collection.map(binding)
+    tags.map { |tag| tag.render(values.include?(tag.value)) }
+  end
+end
