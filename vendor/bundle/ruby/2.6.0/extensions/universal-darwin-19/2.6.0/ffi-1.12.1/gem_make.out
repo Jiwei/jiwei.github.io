@@ -1,5 +1,5 @@
 current directory: /Users/jimmy/Workspace/jiwei.github.io/vendor/bundle/ruby/2.6.0/gems/ffi-1.12.1/ext/ffi_c
-/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20200121-44486-4b6j6c.rb extconf.rb
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20200121-59478-x4kr0f.rb extconf.rb
 checking for ffi.h... no
 checking for ffi.h in /usr/local/include,/usr/include/ffi... no
 checking for shlwapi.h... no
@@ -171,4 +171,4 @@ compiling Variadic.c
 compiling ffi.c
 linking shared-object ffi_c.bundle
 ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.Internal.sdk/usr/local/lib'
-/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20200121-44486-106vlbk
+/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20200121-59478-tzzqmx

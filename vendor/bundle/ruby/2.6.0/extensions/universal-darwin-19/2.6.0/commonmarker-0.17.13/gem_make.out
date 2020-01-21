@@ -1,5 +1,5 @@
 current directory: /Users/jimmy/Workspace/jiwei.github.io/vendor/bundle/ruby/2.6.0/gems/commonmarker-0.17.13/ext/commonmarker
-/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20200121-41146-7063m5.rb extconf.rb
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20200121-59310-wcld2p.rb extconf.rb
 creating Makefile
 
 current directory: /Users/jimmy/Workspace/jiwei.github.io/vendor/bundle/ruby/2.6.0/gems/commonmarker-0.17.13/ext/commonmarker
@@ -55,4 +55,4 @@ ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/
 
 current directory: /Users/jimmy/Workspace/jiwei.github.io/vendor/bundle/ruby/2.6.0/gems/commonmarker-0.17.13/ext/commonmarker
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 commonmarker.bundle ./.gem.20200121-41146-z73njc/commonmarker
+/usr/bin/install -c -m 0755 commonmarker.bundle ./.gem.20200121-59310-17ve3cc/commonmarker

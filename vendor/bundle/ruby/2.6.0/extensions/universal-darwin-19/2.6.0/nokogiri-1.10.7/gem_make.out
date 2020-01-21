@@ -1,5 +1,5 @@
 current directory: /Users/jimmy/Workspace/jiwei.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.7/ext/nokogiri
-/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20200121-44486-1rt3r3r.rb extconf.rb
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20200121-59478-3nhwm2.rb extconf.rb
 checking if the C compiler accepts  -I /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libxml2... yes
 checking if the C compiler accepts -Wno-error=unused-command-line-argument-hard-error-in-future... no
 Building nokogiri using packaged libraries.
@@ -131,4 +131,4 @@ rm -rf /Users/jimmy/Workspace/jiwei.github.io/vendor/bundle/ruby/2.6.0/gems/noko
 
 current directory: /Users/jimmy/Workspace/jiwei.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.7/ext/nokogiri
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20200121-44486-1a3tgw9/nokogiri
+/usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20200121-59478-yq0yui/nokogiri
