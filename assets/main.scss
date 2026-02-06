@@ -1,0 +1,230 @@
+---
+---
+
+@import "minima";
+
+/* ===== Typography ===== */
+body {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #2d3748;
+  line-height: 1.75;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #1a202c;
+  font-weight: 700;
+}
+
+/* ===== Header ===== */
+.site-header {
+  border-top: 4px solid #4a6fa5;
+  border-bottom: 1px solid #e2e8f0;
+  background: #fff;
+}
+
+.site-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.5px;
+  color: #1a202c !important;
+
+  &:hover {
+    text-decoration: none !important;
+    color: #4a6fa5 !important;
+  }
+}
+
+.page-link {
+  color: #4a5568 !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+
+  &:hover {
+    color: #4a6fa5 !important;
+  }
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  text-align: center;
+  padding: 3rem 0 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e2e8f0;
+
+  &-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.4rem;
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+
+  &-subtitle {
+    font-size: 1.15rem;
+    color: #718096;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+/* ===== Post List ===== */
+.post-list-heading {
+  font-size: 1.4rem;
+  color: #4a5568;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.post-list > li {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #edf2f7;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.post-meta {
+  color: #a0aec0;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.post-link {
+  color: #1a202c;
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #4a6fa5;
+    text-decoration: none;
+  }
+}
+
+.post-excerpt {
+  color: #718096;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ===== Post Content ===== */
+.post-title {
+  font-size: 2.2rem;
+  color: #1a202c;
+}
+
+.post-content {
+  h2 {
+    margin-top: 2.5rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #edf2f7;
+  }
+
+  p {
+    margin-bottom: 1.25rem;
+  }
+
+  a {
+    color: #4a6fa5;
+    text-decoration: none;
+    border-bottom: 1px solid #bee3f8;
+    transition: border-color 0.2s ease;
+
+    &:hover {
+      border-bottom-color: #4a6fa5;
+    }
+  }
+
+  blockquote {
+    border-left: 3px solid #4a6fa5;
+    color: #4a5568;
+    font-style: italic;
+    background: #f7fafc;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  code {
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 3px;
+    padding: 0.15em 0.4em;
+    font-size: 0.88em;
+  }
+
+  pre {
+    background: #2d3748;
+    border: none;
+    border-radius: 6px;
+    padding: 1.25rem;
+
+    code {
+      background: none;
+      border: none;
+      color: #e2e8f0;
+      padding: 0;
+    }
+  }
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  border-top: 1px solid #e2e8f0;
+  background: #f7fafc;
+  color: #718096;
+}
+
+.footer-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #2d3748;
+}
+
+.footer-col a {
+  color: #4a6fa5;
+
+  &:hover {
+    color: #2c5282;
+  }
+}
+
+/* ===== RSS Link ===== */
+.rss-subscribe {
+  font-size: 0.85rem;
+  color: #a0aec0;
+  margin-top: 2rem;
+
+  a {
+    color: #4a6fa5;
+  }
+}
+
+/* ===== Page ===== */
+.page-heading {
+  font-size: 2rem;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 600px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .post-link {
+    font-size: 1.15rem;
+  }
+}
