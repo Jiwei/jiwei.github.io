@@ -231,32 +231,35 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ===== Projects ===== */
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
+  flex: 1 1 300px;
+  max-width: 380px;
   background: #fff;
   border: 1px solid #e2e8f0;
-  border-radius: 14px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(26, 32, 44, 0.06);
+  box-shadow: 0 4px 16px rgba(26, 32, 44, 0.07);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 24px rgba(26, 32, 44, 0.12);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px rgba(26, 32, 44, 0.14);
   }
 }
 
 .project-thumb {
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  background: #1a1248;
+  background: #161244;
 
   img {
     display: block;
@@ -270,12 +273,12 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 1.1rem 1.2rem 1.2rem;
+  padding: 1.25rem 1.25rem 1.35rem;
 }
 
 .project-title {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   color: #1a202c;
   margin: 0 0 0.5rem;
 }
@@ -284,49 +287,55 @@ h1, h2, h3, h4, h5, h6 {
   color: #718096;
   font-size: 0.9rem;
   line-height: 1.6;
-  margin: 0 0 1.1rem;
+  margin: 0 0 1.25rem;
 }
 
 .project-actions {
   margin-top: auto;
   display: flex;
   gap: 0.6rem;
-}
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  padding: 0.55rem 0.9rem;
-  border-radius: 8px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  text-decoration: none;
-  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-}
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 0.55rem 0.9rem;
+    border-radius: 8px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    line-height: 1.4;
+    text-decoration: none;
+    border-bottom: none;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 
-.btn-github {
-  background: #2d3748;
-  color: #fff;
-  border: 1px solid #2d3748;
-
-  &:hover {
-    background: #1a202c;
-    border-color: #1a202c;
-    color: #fff;
+    &:hover {
+      text-decoration: none;
+    }
   }
-}
 
-.btn-brochure {
-  background: #fff;
-  color: #4a6fa5;
-  border: 1px solid #4a6fa5;
-
-  &:hover {
-    background: #4a6fa5;
+  .btn-github {
+    background: #2d3748;
     color: #fff;
+    border: 1px solid #2d3748;
+
+    &:hover {
+      background: #1a202c;
+      border-color: #1a202c;
+      color: #fff;
+    }
+  }
+
+  .btn-brochure {
+    background: #fff;
+    color: #4a6fa5;
+    border: 1px solid #4a6fa5;
+
+    &:hover {
+      background: #4a6fa5;
+      color: #fff;
+    }
   }
 }

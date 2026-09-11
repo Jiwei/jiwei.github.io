@@ -5,6 +5,6 @@
   description: >-
     A config-driven, provenance-anchored pipeline that turns a corpus of source
     materials into a linked, self-contained knowledge base.
-  image: /assets/auto-archivist.svg
+  image: /assets/auto-archivist.png
   github: https://github.com/Jiwei/auto_archivist
   brochure: /knowledge-wiki.html
