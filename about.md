@@ -9,7 +9,8 @@ I have always been fascinated by how complext systems work, be it computing arch
 In recent years I have been drawn to the fields of first search engines, then NLP and LLMs. 
 
 Part time casual reader of history and philosophy. Occasional ranter and retired professional troll online.
-Passionate about frontier AI, yet believe solemn and reflective human pondering shall never be neglected (though it maybe replaced depending on the use case). That is this site is here.
+
+Passionate about frontier AI, yet believing solemn human pondering shall never be neglected (though it maybe replaced depending on the use case), which is why this site is here.
 
 Opinions are my own. 
 

@@ -48,6 +48,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.page-link .github-icon {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-top: -2px;
+  fill: currentColor;
+}
+
 /* ===== Hero Section ===== */
 .hero {
   text-align: center;
@@ -163,10 +171,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.88em;
   }
 
-  pre {
+  pre,
+  .highlighter-rouge .highlight {
     background: #2d3748;
     border: none;
     border-radius: 6px;
+  }
+
+  pre {
     padding: 1.25rem;
 
     code {
