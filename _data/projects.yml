@@ -1,7 +1,7 @@
 # Projects shown on the Projects page (/projects/).
 # Add a new entry to surface another project card. `brochure` is optional —
 # omit it (or leave empty) and the card will show only the GitHub button.
-- title: Auto-Archivist
+- title: WikiWeave
   description: >-
     A config-driven, provenance-anchored pipeline that turns a corpus of source
     materials into a linked, self-contained knowledge base.
